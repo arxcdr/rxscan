@@ -34,7 +34,8 @@
 
         </Button>
         <Button x:ConnectionId='4' x:Name="FolderButton" Grid.ColumnSpan="1" Grid.Column="1" Grid.Row="2" Content="CHANGER LE DOSSIER" BorderBrush="#FFF7EFEF" FontSize="20" FontWeight="Normal" HorizontalAlignment="Right" Margin="10,10,50,10" VerticalAlignment="Stretch" Background="#33428CE6" Width="250"                           />
-        <ProgressRing x:ConnectionId='5' x:Name="PRing" IsActive="False" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="0,0,0,5" Grid.Row="3" VerticalAlignment="Center" Height="25" Width="25" FocusVisualPrimaryBrush="#FFDED6D6" Foreground="White"/>
+        <ProgressRing x:ConnectionId='5' x:Name="PRing" IsActive="False" Grid.ColumnSpan="2" HorizontalAlignment="Right" Margin="0,0,50,0" Grid.Row="3" VerticalAlignment="Center" Height="25" Width="25" FocusVisualPrimaryBrush="#FFDED6D6" Foreground="White"/>
+        <TextBlock x:ConnectionId='6' x:Name="StatusBlock" HorizontalAlignment="Left" Margin="50,0,0,5" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="3" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Center"/>
     </Grid>
 </Page>
 

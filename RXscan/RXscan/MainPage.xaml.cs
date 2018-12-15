@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -6,6 +7,8 @@ using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.Devices.Enumeration;
+using Windows.Devices.Scanners;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Storage;
@@ -37,16 +40,73 @@ namespace RXscan
         Windows.Storage.StorageFolder localFolder =
             Windows.Storage.ApplicationData.Current.LocalFolder;
 
+        // Default folder path to display in the UI
         public String dPath { get; set; }
+
+        // Device watcher used to detect any connected scanner
+        public DeviceWatcher scannerWatcher;
+
+        // Scanner context
+        public ScannerContext scanContext;
+
+        public static MainPage Current;
 
         public MainPage()
         {
-            this.InitializeComponent();
+            this.InitializeComponent();           
             Debug.WriteLine(localSettings.Values);
             CheckDefaultFolderPath();
             DataContext = this;
+
+            // This is a static public property that will allow downstream pages to get  
+            // a handle to the MainPage instance in order to call methods that are in this class. 
+            Current = this;
+
+            // Create scanner context object to access scanning methods
+            scanContext = new ScannerContext();
+
+            // Automatically start enumerating scanners
+            scanContext.StartScannerWatcher();
+
+            StatusBlock.Text = "Prêt pour la numérisation.";
         }
 
+        // SCANNER CODE
+        public async void ScanToFolder(string deviceId, StorageFolder folder, ColorMode clr)
+        {
+            try
+            {
+                // Get the scanner object for this device id 
+                ImageScanner myScanner = await ImageScanner.FromIdAsync(deviceId);
+
+                // Set color mode depending on user input
+                if(clr == ColorMode.Greyscale)
+                {
+                    myScanner.FlatbedConfiguration.ColorMode = ImageScannerColorMode.Grayscale;
+                }
+                else
+                {
+                    myScanner.FlatbedConfiguration.ColorMode = ImageScannerColorMode.Color;
+                }
+
+                // Scan API call to start scanning  
+                var result = await myScanner.ScanFilesToFolderAsync(ImageScannerScanSource.Default, folder);
+
+            }
+            catch (OperationCanceledException)
+            {
+                //Utils.DisplayScanCancelationMessage();
+            }
+
+        }
+
+        public enum ColorMode
+        {
+            Greyscale,
+            Color,
+        }
+
+        // FILE SYSTEM CODE
         private void CheckDefaultFolderPath()
         {            
             // Load default folder path and set it if not already defined
@@ -81,18 +141,21 @@ namespace RXscan
             else
             {
                 return null;
-            }
-            
+            }            
         }
 
         private void BWScanButton_Click(object sender, RoutedEventArgs e)
         {
             Debug.WriteLine("Testing black & white scan button");
+            ScanToFolder(scanContext.CurrentScannerDeviceId, localFolder, ColorMode.Greyscale);
+            StatusBlock.Text = "Numérisation en cours, veuillez patienter.";
         }
 
         private void CLRScanButton_Click(object sender, RoutedEventArgs e)
         {
-            Debug.WriteLine("Testing color scan button");
+            Debug.WriteLine("Testing color scan button");            
+            ScanToFolder(scanContext.CurrentScannerDeviceId, localFolder, ColorMode.Color);
+            StatusBlock.Text = "Numérisation en cours, veuillez patienter.";
         }
 
         private async void ShowFilesButton_Click(object sender, RoutedEventArgs e)
@@ -113,8 +176,7 @@ namespace RXscan
         {           
             FolderPicker picker = new FolderPicker();
             picker.FileTypeFilter.Add("*");
-            var pfolder = await picker.PickSingleFolderAsync();
-            
+            var pfolder = await picker.PickSingleFolderAsync();            
 
             // If the user selected a new folder...
             if(pfolder != null){
