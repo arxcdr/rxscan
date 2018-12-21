@@ -1,0 +1,2 @@
+MainPackage=C:\Users\Alex\source\repos\RXscan\RXscan\bin\x64\Debug\RXscan_1.0.0.0_x64_Debug.appx
+SymbolPackage=C:\Users\Alex\Desktop\RXscan_1.0.0.0_Debug_Test\RXscan_1.0.0.0_x64_Debug.appxsym

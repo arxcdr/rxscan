@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using Windows.Graphics.Imaging;
 using Windows.Storage;
@@ -34,7 +31,7 @@ namespace RXscan
                 pixelData = null;
                 
                 // Set image quality
-                double jpegImageQuality = 0.85d;
+                double jpegImageQuality = 0.80d;
                 Debug.WriteLine("Source image size: " + fileSize);
 
                 var imageWriteableStream = await outputFile.OpenAsync(FileAccessMode.ReadWrite);

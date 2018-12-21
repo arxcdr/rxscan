@@ -20,7 +20,10 @@
             <RowDefinition Height="40" MinHeight="40"/>
         </Grid.RowDefinitions>
 
-        <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="10,20,0,20" Text="SCAN" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="50"/>
+        <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="10,20,0,20" TextWrapping="Wrap" FontSize="50" VerticalAlignment="Center">
+            <Run Text="RX" FontFamily="Assets/Streamster.ttf#Streamster"></Run>
+            <Run Text="scan"></Run>
+        </TextBlock>
 
         <Button x:Name="BWScanButton" Grid.Column="0" Grid.Row="1" Content="NOIR ET BLANC" BorderBrush="#FFF7EFEF" FontSize="20" FontWeight="Normal" HorizontalAlignment="Stretch" Margin="50,10,10,10" VerticalAlignment="Stretch" Background="#CC272626" Click="BWScanButton_Click"/>
         <Button x:Name="CLRScanButton" Grid.Column="1" Grid.Row="1" Content="COULEUR" BorderBrush="#FFF7EFEF" FontSize="20" FontWeight="Normal" HorizontalAlignment="Stretch" Margin="10,10,50,10" VerticalAlignment="Stretch" Background="#7F150F8F" Click="CLRScanButton_Click"/>

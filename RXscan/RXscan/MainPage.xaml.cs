@@ -1,28 +1,14 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
-using System.IO;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Devices.Enumeration;
 using Windows.Devices.Scanners;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.Graphics.Imaging;
 using Windows.Storage;
 using Windows.Storage.AccessCache;
 using Windows.Storage.Pickers;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
-using Windows.Storage.Streams;
 using Windows.System;
 using System.Threading.Tasks;
 
@@ -85,14 +71,14 @@ namespace RXscan
             return tempFolder;
         }
 
-        // Convert scanned file to png
+        // Convert scanned file to jpeg
         private async Task<StorageFile> ConvertTempFile()
         {
             IReadOnlyList<StorageFile> files = await tempFolder.GetFilesAsync();
             StorageFile image = files[0];
 
             // Create new jpeg file in local folder
-            StorageFile jpegOutput = await localFolder.CreateFileAsync("NumérisationSansTitre.png",
+            StorageFile jpegOutput = await localFolder.CreateFileAsync("NumérisationSansTitre.jpeg",
                 Windows.Storage.CreationCollisionOption.GenerateUniqueName);
 
             // Convert the image
@@ -191,30 +177,36 @@ namespace RXscan
             }            
         }
 
+        // Initiate document scanning in greyscale
         private async void BWScanButton_Click(object sender, RoutedEventArgs e)
         {
             await CreateTempFolder();
             StatusBlock.Text = "Numérisation en cours, veuillez patienter...";
             PRing.IsActive = true;
+            DisableUI();
             await ScanToFolder(scanContext.CurrentScannerDeviceId, tempFolder, ColorMode.Greyscale);
             StatusBlock.Text = "Conversion en cours, veuillez patienter...";
             await ConvertTempFile();
             await DeleteTempFolder();
             StatusBlock.Text = "Prêt pour la numérisation.";
-            PRing.IsActive = false;           
+            PRing.IsActive = false;
+            EnableUI();
         }
 
+        // Initiate document scanning in color
         private async void CLRScanButton_Click(object sender, RoutedEventArgs e)
         {
             await CreateTempFolder();
             StatusBlock.Text = "Numérisation en cours, veuillez patienter...";
             PRing.IsActive = true;
+            DisableUI();
             await ScanToFolder(scanContext.CurrentScannerDeviceId, tempFolder, ColorMode.Color);
             StatusBlock.Text = "Conversion en cours, veuillez patienter...";
             await ConvertTempFile();
             await DeleteTempFolder();
             StatusBlock.Text = "Prêt pour la numérisation.";
             PRing.IsActive = false;
+            EnableUI();
         }
 
         private async void ShowFilesButton_Click(object sender, RoutedEventArgs e)
@@ -270,6 +262,24 @@ namespace RXscan
             {
                 propertyChangedEvent(this, new PropertyChangedEventArgs(propertyName));
             }
+        }
+
+        // Disable buttons while a document is being scanned to prevent errors
+        private void DisableUI()
+        {
+            BWScanButton.IsEnabled = false;
+            CLRScanButton.IsEnabled = false;
+            FolderButton.IsEnabled = false;
+            ShowFilesButton.IsEnabled = false;
+        }
+
+        // Enable the UI when the app is ready
+        private void EnableUI()
+        {
+            BWScanButton.IsEnabled = true;
+            CLRScanButton.IsEnabled = true;
+            FolderButton.IsEnabled = true;
+            ShowFilesButton.IsEnabled = true;
         }
     }
 

@@ -30,17 +30,21 @@
     <AppXManifest Include="C:\Users\Alex\source\repos\RXscan\RXscan\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-12-21T10:42:26.464</Modified>
+      <Modified>2018-12-21T14:34:44.192</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\bin\x86\Debug\RXscan.exe">
       <PackagePath>entrypoint\RXscan.exe</PackagePath>
-      <Modified>2018-12-21T10:42:25.861</Modified>
+      <Modified>2018-12-21T14:34:43.891</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.2\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
       <Modified>2018-10-31T10:00:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\Streamster.ttf">
+      <PackagePath>Assets\Streamster.ttf</PackagePath>
+      <Modified>2018-12-21T13:29:59.897</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -82,15 +86,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\bin\x86\Debug\RXscan.xr.xml">
       <PackagePath>RXscan.xr.xml</PackagePath>
-      <Modified>2018-12-12T15:38:41.334</Modified>
+      <Modified>2018-12-21T13:45:00.616</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2018-12-21T10:42:25.638</Modified>
+      <Modified>2018-12-21T14:34:43.682</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2018-12-21T10:42:25.639</Modified>
+      <Modified>2018-12-21T14:34:43.682</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -98,11 +102,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2018-12-20T17:17:10.335</Modified>
+      <Modified>2018-12-21T13:32:15.082</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\bin\x86\Debug\Core\RXscan.exe">
       <PackagePath>RXscan.exe</PackagePath>
-      <Modified>2018-12-21T10:42:26.446</Modified>
+      <Modified>2018-12-21T14:34:44.185</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

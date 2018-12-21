@@ -5,19 +5,14 @@
 //*********************************************************
 
 using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Collections.ObjectModel;
 using Windows.UI.Xaml;
-using Windows.UI.Xaml.Documents;
 using Windows.ApplicationModel;
 using System.ComponentModel;
 using Windows.Devices.Enumeration;
 using Windows.Storage;
-using Windows.Foundation;
 
 namespace RXscan
 {
