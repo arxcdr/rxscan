@@ -1,2 +1,5 @@
-MainPackage=C:\Users\Alex\source\repos\RXscan\RXscan\bin\x64\Debug\RXscan_1.0.0.0_x64_Debug.appx
-SymbolPackage=C:\Users\Alex\Desktop\RXscan_1.0.0.0_Debug_Test\RXscan_1.0.0.0_x64_Debug.appxsym
+MainPackage=C:\Users\Alex\source\repos\RXscan\RXscan\bin\x64\Debug\RXscan_1.0.2.0_x64_Debug.appx
+ResourcePack=C:\Users\Alex\source\repos\RXscan\RXscan\bin\x64\Debug\RXscan_1.0.2.0_scale-100.appx
+ResourcePack=C:\Users\Alex\source\repos\RXscan\RXscan\bin\x64\Debug\RXscan_1.0.2.0_scale-125.appx
+ResourcePack=C:\Users\Alex\source\repos\RXscan\RXscan\bin\x64\Debug\RXscan_1.0.2.0_scale-150.appx
+ResourcePack=C:\Users\Alex\source\repos\RXscan\RXscan\bin\x64\Debug\RXscan_1.0.2.0_scale-400.appx

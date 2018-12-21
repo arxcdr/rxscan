@@ -1,0 +1,1 @@
+C:\Users\Alex\source\repos\RXscan\RXscan\RXscan.csproj;x64

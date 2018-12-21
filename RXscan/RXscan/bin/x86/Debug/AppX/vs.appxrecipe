@@ -19,28 +19,257 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\Alex\source\repos\RXscan\RXscan\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>326D0D46FB3398981BC3547604A810163D0EABA6898428919DE6FA563498D029</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>7d9b7a20-02ea-415d-a70d-54aace0e270a_1.0.0.0_x86__cb1hhkscw5m06</RegisteredPackageMoniker>
+    <RegisteredManifestChecksum>7637E4EEAAECF7E7E0AD451F1CC66420DE487411F47F3A767098013F49EA56F7</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>7d9b7a20-02ea-415d-a70d-54aace0e270a_1.0.1.0_x86__cb1hhkscw5m06</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>7d9b7a20-02ea-415d-a70d-54aace0e270a_cb1hhkscw5m06!App</RegisteredUserModeAppID>
     <RegisteredPackageID>7d9b7a20-02ea-415d-a70d-54aace0e270a</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=Alex</RegisteredPackagePublisher>
-    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <RegisteredVersion>1.0.1.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\Alex\source\repos\RXscan\RXscan\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-12-21T14:34:44.192</Modified>
+      <Modified>2018-12-21T18:53:37.660</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\bin\x86\Debug\RXscan.exe">
       <PackagePath>entrypoint\RXscan.exe</PackagePath>
-      <Modified>2018-12-21T14:34:43.891</Modified>
+      <Modified>2018-12-21T18:53:37.044</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.2\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
       <Modified>2018-10-31T10:00:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\LargeTile.scale-100.png">
+      <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-21T18:53:23.902</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\LargeTile.scale-125.png">
+      <PackagePath>Assets\LargeTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-21T18:53:23.953</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\LargeTile.scale-150.png">
+      <PackagePath>Assets\LargeTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-21T18:53:24.013</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\LargeTile.scale-200.png">
+      <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-21T18:53:24.091</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\LargeTile.scale-400.png">
+      <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-21T18:53:24.343</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\SmallTile.scale-100.png">
+      <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-21T18:53:23.300</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\SmallTile.scale-125.png">
+      <PackagePath>Assets\SmallTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-21T18:53:23.320</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\SmallTile.scale-150.png">
+      <PackagePath>Assets\SmallTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-21T18:53:23.350</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\SmallTile.scale-200.png">
+      <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-21T18:53:23.370</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\SmallTile.scale-400.png">
+      <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-21T18:53:23.410</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-21T18:53:24.793</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\SplashScreen.scale-125.png">
+      <PackagePath>Assets\SplashScreen.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-21T18:53:24.851</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\SplashScreen.scale-150.png">
+      <PackagePath>Assets\SplashScreen.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-21T18:53:24.929</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\SplashScreen.scale-400.png">
+      <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-21T18:53:25.473</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\Square150x150Logo.scale-100.png">
+      <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-21T18:53:23.440</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\Square150x150Logo.scale-125.png">
+      <PackagePath>Assets\Square150x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-21T18:53:23.461</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\Square150x150Logo.scale-150.png">
+      <PackagePath>Assets\Square150x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-21T18:53:23.500</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\Square150x150Logo.scale-400.png">
+      <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-21T18:53:23.613</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-21T18:53:24.630</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-21T18:53:24.732</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\Square44x44Logo.altform-unplated_targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-21T18:53:24.682</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-21T18:53:24.702</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\Square44x44Logo.scale-100.png">
+      <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-21T18:53:24.370</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\Square44x44Logo.scale-125.png">
+      <PackagePath>Assets\Square44x44Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-21T18:53:24.393</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\Square44x44Logo.scale-150.png">
+      <PackagePath>Assets\Square44x44Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-21T18:53:24.431</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\Square44x44Logo.scale-400.png">
+      <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-21T18:53:24.481</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\Square44x44Logo.targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-21T18:53:24.508</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\Square44x44Logo.targetsize-24.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-21T18:53:24.530</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\Square44x44Logo.targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-21T18:53:24.610</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\Square44x44Logo.targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-21T18:53:24.550</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\Square44x44Logo.targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-21T18:53:24.570</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-21T18:53:25.503</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\StoreLogo.scale-125.png">
+      <PackagePath>Assets\StoreLogo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-21T18:53:25.541</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\StoreLogo.scale-150.png">
+      <PackagePath>Assets\StoreLogo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-21T18:53:25.561</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\StoreLogo.scale-200.png">
+      <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-21T18:53:25.590</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\StoreLogo.scale-400.png">
+      <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-21T18:53:25.619</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\Wide310x150Logo.scale-100.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-21T18:53:23.641</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\Wide310x150Logo.scale-125.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-21T18:53:23.669</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\Wide310x150Logo.scale-150.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-21T18:53:23.711</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\Wide310x150Logo.scale-400.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-21T18:53:23.869</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\LockScreenLogo.scale-200.png">
+      <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
+      <Modified>2018-11-28T16:08:57.732</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\SplashScreen.scale-200.png">
+      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-21T18:53:25.040</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\Square150x150Logo.scale-200.png">
+      <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-21T18:53:23.530</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\Square44x44Logo.scale-200.png">
+      <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-21T18:53:24.453</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-21T18:53:24.659</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\Wide310x150Logo.scale-200.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-21T18:53:23.751</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\Streamster.ttf">
       <PackagePath>Assets\Streamster.ttf</PackagePath>
@@ -50,51 +279,17 @@
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2018-11-28T18:19:37.334</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\LockScreenLogo.scale-200.png">
-      <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2018-11-28T16:08:57.732</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\SplashScreen.scale-200.png">
-      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-11-28T16:08:57.732</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\Square150x150Logo.scale-200.png">
-      <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-11-28T16:08:57.732</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\Square44x44Logo.scale-200.png">
-      <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-11-28T16:08:57.732</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
-      <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-11-28T16:08:57.732</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\StoreLogo.png">
-      <PackagePath>Assets\StoreLogo.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-11-28T16:08:57.732</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\Assets\Wide310x150Logo.scale-200.png">
-      <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-11-28T16:08:57.732</Modified>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\bin\x86\Debug\RXscan.xr.xml">
       <PackagePath>RXscan.xr.xml</PackagePath>
       <Modified>2018-12-21T13:45:00.616</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2018-12-21T14:34:43.682</Modified>
+      <Modified>2018-12-21T18:53:36.793</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2018-12-21T14:34:43.682</Modified>
+      <Modified>2018-12-21T18:53:36.794</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -102,11 +297,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2018-12-21T13:32:15.082</Modified>
+      <Modified>2018-12-21T18:53:37.266</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alex\source\repos\RXscan\RXscan\bin\x86\Debug\Core\RXscan.exe">
       <PackagePath>RXscan.exe</PackagePath>
-      <Modified>2018-12-21T14:34:44.185</Modified>
+      <Modified>2018-12-21T18:53:37.653</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -41,3 +41,4 @@ C:\Users\Alex\source\repos\RXscan\RXscan\obj\x86\Debug\qualifiers.txt
 C:\Users\Alex\source\repos\RXscan\RXscan\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\Alex\source\repos\RXscan\RXscan\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Alex\source\repos\RXscan\RXscan\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\Alex\source\repos\RXscan\RXscan\bin\x86\Debug\Core\ForBundle\AppxManifest.xml

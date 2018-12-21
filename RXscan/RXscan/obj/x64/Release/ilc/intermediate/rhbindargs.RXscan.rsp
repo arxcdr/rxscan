@@ -1,0 +1,16 @@
+﻿/osver:6.2
+/appcontainer
+"/runtime:mrt100_app"
+/eh:clr
+/pdb
+"/nativeLink:C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.native.compiler\2.2.1\tools\x64\ilc\lib\Native\vmath.lib"
+/customImports
+/methodBodyFolding
+"C:\Users\Alex\source\repos\RXscan\RXscan\obj\x64\Release\ilc\intermediate\MDIL\RXscan.mdilexe"
+"/i:C:\Users\Alex\source\repos\RXscan\RXscan\obj\x64\Release\ilc\intermediate\MDIL"
+"/out:C:\Users\Alex\source\repos\RXscan\RXscan\obj\x64\Release\ilc\intermediate\Native\RXscan.exe"
+"/pdbAltPath:C:\Users\Alex\source\repos\RXscan\RXscan\bin\x64\Release\ilc"
+"/res:C:\Users\Alex\source\repos\RXscan\RXscan\obj\x64\Release\ilc\intermediate\Native.res"
+"/i:C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.native.sharedlibrary\2.2.1\tools\SharedLibrary\ret\MDIL"
+/shimexe
+"/classlib:SharedLibrary"

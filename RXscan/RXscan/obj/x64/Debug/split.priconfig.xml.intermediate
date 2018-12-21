@@ -8,7 +8,7 @@
   </packaging>
   <index root="\" startIndexAt="C:\Users\Alex\source\repos\RXscan\RXscan\bin\x64\Debug\resources.pri">
     <default>
-      <qualifier name="Language" value="en-US" />
+      <qualifier name="Language" value="fr-fr" />
       <qualifier name="Contrast" value="standard" />
       <qualifier name="Scale" value="200" />
       <qualifier name="HomeRegion" value="001" />

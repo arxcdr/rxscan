@@ -4,12 +4,14 @@ using System.ComponentModel;
 using System.Diagnostics;
 using Windows.Devices.Enumeration;
 using Windows.Devices.Scanners;
+using Windows.Foundation;
 using Windows.Storage;
 using Windows.Storage.AccessCache;
 using Windows.Storage.Pickers;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.System;
+using Windows.UI.ViewManagement;
 using System.Threading.Tasks;
 
 
@@ -44,8 +46,13 @@ namespace RXscan
 
         public MainPage()
         {
-            this.InitializeComponent();           
-            Debug.WriteLine(localSettings.Values);
+            this.InitializeComponent();
+
+            // Set window size
+            ApplicationView.PreferredLaunchViewSize = new Size(889, 466);
+            ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
+            ApplicationView.GetForCurrentView().SetPreferredMinSize(new Size(889, 466));
+
             CheckDefaultFolderPath();
             DataContext = this;
 

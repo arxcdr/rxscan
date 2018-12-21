@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="7d9b7a20-02ea-415d-a70d-54aace0e270a" Publisher="CN=Alex" Version="1.0.0.0" ProcessorArchitecture="x86" />
+  <Identity Name="7d9b7a20-02ea-415d-a70d-54aace0e270a" Publisher="CN=Alex" Version="1.0.1.0" ProcessorArchitecture="x86" />
   <mp:PhoneIdentity PhoneProductId="7d9b7a20-02ea-415d-a70d-54aace0e270a" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>RXscan</DisplayName>
@@ -20,12 +20,12 @@
     <PackageDependency Name="Microsoft.NET.CoreFramework.Debug.2.2" MinVersion="2.2.26926.4" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
   </Dependencies>
   <Resources>
-    <Resource Language="EN-US" />
+    <Resource Language="FR-FR" />
   </Resources>
   <Applications>
     <Application Id="App" Executable="RXscan.exe" EntryPoint="RXscan.App">
-      <uap:VisualElements DisplayName="RXscan" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="RXscan" BackgroundColor="transparent">
-        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" />
+      <uap:VisualElements DisplayName="RXscan" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="A basic scanning app designed to alleviate complexity from the default Windows Fax &amp; Scan app for casual users." BackgroundColor="transparent">
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" Square310x310Logo="Assets\LargeTile.png" Square71x71Logo="Assets\SmallTile.png"></uap:DefaultTile>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
       </uap:VisualElements>
     </Application>
